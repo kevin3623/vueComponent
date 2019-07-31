@@ -6,8 +6,10 @@
     <!-- <H2>倒计时</H2>
     <countdowmB @send="test"></countdowmB>
    -->
-    <H2>toast 提示框</H2>
-    
+
+    <!-- <H2>toast 提示框</H2>
+    <button @click="toast">toast提示</button>
+     -->
     <!-- <H2>alert 提示框</H2>
 
     <H2>confirm 提示框</H2>
@@ -20,6 +22,7 @@
 <script>
 import modal from '@/components/modal'
 import countdowmB from '@/components/countdowmB'
+// import toast from '@/components/toast'
 
 export default {
   components: {
@@ -29,6 +32,10 @@ export default {
   methods: {
     test () {
       alert('d')
+    },
+    toast () {
+      this.$toast('dd')
+      // toast 
     }
   }
 }
