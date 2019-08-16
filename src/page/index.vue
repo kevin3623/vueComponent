@@ -24,7 +24,9 @@ import carousel from '@/components/carousel/carousel'
 
 export default {
   components: {
+
     modal,
+    
     countdowmB,
     carousel
   },
