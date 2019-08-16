@@ -10,8 +10,6 @@
             <div v-show="isPullingDown">
               <span>Loading...</span>
             </div>
-
-            
             <div v-show="!isPullingDown"><span>Refresh success</span></div>
           </div>
         </div>
@@ -27,7 +25,7 @@
 
 <script>
   import BScroll from 'better-scroll'
-
+// dgkjasdfkjadkfjadsk jksdjafd
   function getOneRandomList (step = 0) {
     const arr = Array.apply(null, {length: (30 + step)}).map((...args) => args[1])
     return arr.sort(() => Math.random() - 0.5)
