@@ -31,9 +31,13 @@ export default {
   mounted () {
       let scroll = new BScroll(this.$refs.bscroll, {
         pullUpLoad: {
-          threshold: -20 // 在上拉到超过底部 20px 时，触发 pullingUp 事件
-          // threshold: '加载滚动'
-        }
+          threshold: 0, // 在上拉到超过底部 20px 时，触发 pullingUp 事件
+          startX: 100,
+          startY: 100,
+          moreTxt: 'dfdkfhj',
+          noMoreTxt: 'sdsd'
+        },
+        scrollbar: true
       })
       scroll.on('pullingUp', () => {
         console.log('加载ajax数据')
@@ -45,11 +49,19 @@ export default {
 </script>
 <style scoped>
 .wrapper{
-     width: 100%;
-    height: 70vH;
-    overflow: hidden;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: aqua;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
 }
 li{
   height: 70px;
+  list-style: none;
 }
 </style>
