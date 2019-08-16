@@ -31,6 +31,7 @@
     return arr.sort(() => Math.random() - 0.5)
   }
 
+/* 肯定是更加深刻的房间爱的是开发商可 */
   const TIME_BOUNCE = 800
   const TIME_STOP = 600
   const THRESHOLD = 70
