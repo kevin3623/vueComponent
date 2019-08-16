@@ -10,6 +10,8 @@
             <div v-show="isPullingDown">
               <span>Loading...</span>
             </div>
+
+            
             <div v-show="!isPullingDown"><span>Refresh success</span></div>
           </div>
         </div>
