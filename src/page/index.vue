@@ -7,12 +7,14 @@
     <countdowmB @send="test"></countdowmB>
    -->
 
-    <H2>toast 提示框</H2>
+    <!-- <H2>toast 提示框</H2>
     <button @click="toast">toast提示</button>
+     -->
+    <!-- <H2>alert 提示框</H2>
 
-    <H2>轮播图</H2>
-    <!-- <carousel></carousel> -->
-    <!-- <H2>Switch 开关按钮</H2> -->
+    <H2>confirm 提示框</H2>
+
+    <H2>Switch 开关按钮</H2> -->
 
   </div>
 </template>
@@ -20,13 +22,19 @@
 <script>
 import modal from '@/components/modal'
 import countdowmB from '@/components/countdowmB'
-import carousel from '@/components/carousel/carousel'
+// import toast from '@/components/toast'
 
 export default {
   components: {
+
     modal,
+<<<<<<< HEAD
+    
     countdowmB,
     carousel
+=======
+    countdowmB
+>>>>>>> parent of efa6a3c... dd
   },
   methods: {
     test () {
