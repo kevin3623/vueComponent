@@ -7,9 +7,13 @@
     <countdowmB @send="test"></countdowmB>
    -->
 
-    <!-- <H2>toast 提示框</H2>
+    <H2>toast 提示框</H2>
     <button @click="toast">toast提示</button>
+
+    <!-- <H2>loding 加载提示</H2>
+    <button @click="loading">loding 加载提示</button>
      -->
+     
     <!-- <H2>alert 提示框</H2>
 
     <H2>confirm 提示框</H2>
@@ -22,19 +26,17 @@
 <script>
 import modal from '@/components/modal'
 import countdowmB from '@/components/countdowmB'
-// import toast from '@/components/toast'
 
 export default {
+  data () {
+  return {
+    
+  }
+  },
   components: {
 
     modal,
-<<<<<<< HEAD
-    
-    countdowmB,
-    carousel
-=======
     countdowmB
->>>>>>> parent of efa6a3c... dd
   },
   methods: {
     test () {
@@ -43,6 +45,9 @@ export default {
     toast () {
       this.$toast('dd')
       // toast 
+    },
+    loading () {
+      this.$loading(true)
     }
   }
 }

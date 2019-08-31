@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Toast from './plugs/toast'
+import Loading from './plugs/loading'
 
 Vue.use(Toast)
+Vue.use(Loading)
 
 Vue.config.productionTip = false
 
