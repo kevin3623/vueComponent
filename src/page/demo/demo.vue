@@ -13,8 +13,6 @@
       <div>dfldfdfj</div>
       <div>dfldfdfj</div>
       <div>dfldfdfj</div>
-      、
-      大幅度发到付
       <div>dfldfdfj</div>
       <div>加载</div>
     </div>
@@ -24,6 +22,7 @@
 </template>
 <script>
 import BScroll from 'better-scroll'
+
 export default {
   data () {
     return {
