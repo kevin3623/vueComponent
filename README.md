@@ -21,7 +21,7 @@
 1. 图片放大插件
    * 描述：
 
-2. toast 提示弹框
+2. toast 提示弹框（需要考虑到，ios键盘呼起时，会不会遮挡到toast弹框）
    * 描述：js通过一个方法调用toast提示框
    * 用法：调用 this.$toast(text,time) 方法。text 的提示框的内容，time 是显示的时间。
 
